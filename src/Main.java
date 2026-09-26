@@ -1,4 +1,4 @@
-import ru.gr05503.ui.Window;
+import ru.gr05504.ui.Window;
 
 public class Main {
 

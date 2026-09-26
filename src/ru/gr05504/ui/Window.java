@@ -1,4 +1,4 @@
-package ru.gr05503.ui;
+package ru.gr05504.ui;
 
 import javax.swing.*;
 import java.awt.*;
