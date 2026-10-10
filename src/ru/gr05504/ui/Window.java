@@ -141,7 +141,7 @@ public class Window extends JFrame implements BookView {
             taBooks.append("" + book.year());
             if (book.info() != null &&  !book.info().isBlank()) {
                 taBooks.append(" | ");
-                taBooks.append(book.title());
+                taBooks.append(book.info());
             }
             taBooks.append(System.lineSeparator());
         }

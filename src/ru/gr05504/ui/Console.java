@@ -58,7 +58,7 @@ public class Console implements BookView {
             sb.append("" + book.year());
             if (book.info() != null && !book.info().isBlank()) {
                 sb.append(" | ");
-                sb.append(book.title());
+                sb.append(book.info());
             }
             sb.append(System.lineSeparator());
         }
