@@ -13,6 +13,7 @@ public class Window extends JFrame implements BookView {
     private JTextField tfAdditional = new JTextField();
     JButton btnAdd = new JButton("Добавить");
     private JTextArea taBooks = new JTextArea();
+    private JLabel lblStatus = new JLabel();
     private final BookPresenter presenter;
 
     public Window(BookPresenter presenter){
@@ -96,6 +97,7 @@ public class Window extends JFrame implements BookView {
 
         add(topPanel, BorderLayout.NORTH);
         add(new JScrollPane(taBooks), BorderLayout.CENTER);
+        add(lblStatus, BorderLayout.SOUTH);
         pack();
         setLocationRelativeTo(null);
     }
@@ -155,6 +157,7 @@ public class Window extends JFrame implements BookView {
     @Override
     public void render(BookFormState state) {
         btnAdd.setEnabled(state.addEnabled());
+        lblStatus.setText(state.status());
         if (state.error() != null)
             showError(state.error());
     }
