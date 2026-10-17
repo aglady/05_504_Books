@@ -1,5 +1,7 @@
 package ru.gr05504.ui;
 
+import ru.gr05504.domain.Book;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyAdapter;
@@ -94,6 +96,7 @@ public class Window extends JFrame implements BookView {
                         .addComponent(btnAdd))
                 .addGap(8));
 
+        taBooks.setEditable(false);
 
         add(topPanel, BorderLayout.NORTH);
         add(new JScrollPane(taBooks), BorderLayout.CENTER);

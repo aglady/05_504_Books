@@ -1,9 +1,12 @@
-package ru.gr05504.ui;
+package ru.gr05504.infrastructure;
+
+import ru.gr05504.domain.Book;
+import ru.gr05504.domain.BookRep;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class InMemoryBookRep implements  BookRep{
+public class InMemoryBookRep implements BookRep {
 
     private final List<Book> books = new ArrayList<>();
     @Override
